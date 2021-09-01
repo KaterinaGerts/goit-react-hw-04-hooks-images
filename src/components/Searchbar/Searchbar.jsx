@@ -20,12 +20,8 @@ const Searchbar = ({ onSubmit }) => {
       toast.error("Oh no, you didn't write your request!");
       return;
     }
-    onSubmit({ cardName });
-    reset();
-  };
-
-  const reset = () => {
-    setCardName({cardName: ''});
+    onSubmit( cardName );
+    setCardName('');
   };
 
   return (
