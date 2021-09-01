@@ -27,13 +27,15 @@ function App() {
 
   const handleFormSubmit = cardName => {
     setCardName(cardName);
-    setPage(page);
-    setCards(cards);
+    setPage(1);
+    setCards([]);
   };
 
   useEffect(() => {
-    if (!cardName || !page) return;
-    setStatus(Status.PENDING);
+    if (!cardName) {
+      return;
+    }
+    const spinner = () => setStatus(Status.PENDING);
 
     cardsApi
       .fetchImages(cardName, page)
@@ -55,6 +57,8 @@ function App() {
           behavior: 'smooth',
         });
       });
+
+    spinner();
   }, [cardName, page]);
 
   const incrementPage = () => {
