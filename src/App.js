@@ -27,12 +27,12 @@ function App() {
 
   const handleFormSubmit = cardName => {
     setCardName(cardName);
-    setCards(cards);
     setPage(page);
+    setCards(cards);
   };
 
   useEffect(() => {
-    if (!cardName ) return;
+    if (!cardName || !page) return;
     setStatus(Status.PENDING);
 
     cardsApi
