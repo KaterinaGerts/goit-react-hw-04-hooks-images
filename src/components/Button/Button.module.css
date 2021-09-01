@@ -1,0 +1,14 @@
+.LoadButton {
+  border-radius: 3px;
+  background-color: paleturquoise;
+  margin-right: 10px;
+  border: 1px solid gray;
+  box-shadow: 3px 3px turquoise, -0.3em 0 .4em gray;
+}
+
+.LoadButtonLabel {
+  font-size: 14px;
+  font-weight: normal;
+  color: gray;
+  font-style: italic;
+}

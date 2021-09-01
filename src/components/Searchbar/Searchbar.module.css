@@ -1,0 +1,22 @@
+.SearchFormButton {
+  border-radius: 3px;
+  background-color: paleturquoise;
+  margin-right: 10px;
+  border: 1px solid gray;
+  box-shadow: 3px 3px turquoise, -0.3em 0 .4em gray;
+}
+
+.SearchFormButtonLabel {
+  font-size: 14px;
+  font-weight: normal;
+  color: gray;
+  font-style: italic;
+}
+
+.SearchFormInput {
+  width: 160px;
+  border: 1px solid grey;
+  border-radius: 2px;
+  box-shadow: -0.3em 0 .4em gray, 3px 3px turquoise;
+  font-style: italic;
+}
